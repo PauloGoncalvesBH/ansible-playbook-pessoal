@@ -1,0 +1,25 @@
+---
+- name: "Brincando com Ansible"
+  hosts: localhost
+  become: true
+  connection: local
+  gather_facts: no
+  roles: 
+    - git
+  # vars:
+    # packages: [vim, git, code, curl]
+  # tasks:
+
+    # - name: Update apt
+    #   apt: update_cache=yes
+
+    # - name: Install packages
+    #   apt: 
+    #     name: '{{ packages }}'
+    #     state: latest
+    #     update_cache: true
+
+    # - name: Ensure a list of packages installed
+    #   apt:
+    #     name: '{{ packages }}'
+    #     state: present
